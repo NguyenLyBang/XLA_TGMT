@@ -44,3 +44,22 @@ Bài 3: Phân Loại Hình Ảnh Chó Mèo
 	Hướng dẫn sử dụng
 		Chạy chương trình.
 		Chương trình sẽ tải dữ liệu, huấn luyện và đánh giá từng mô hình, sau đó in ra kết quả.
+
+Bài 5: Trích Xuất Đặc Trưng HOG và Phân Loại Ảnh
+
+	Mô tả
+		Chương trình thực hiện trích xuất đặc trưng HOG (Histogram of Oriented Gradients) để phân loại ảnh trong một tập dữ liệu. Sau đó, sử dụng hai mô hình cây quyết định:
+		
+		1. CART (Gini Index): Sử dụng gini để chia nhánh.
+		2. ID3 (Information Gain): Sử dụng entropy để chia nhánh.
+	Quy trình
+		1. Trích xuất đặc trưng HOG: Đọc ảnh từ thư mục, chuyển đổi kích thước và trích xuất đặc trưng HOG.
+		2. Chia dữ liệu: Phân chia thành tập huấn luyện và kiểm tra với train_test_split.
+		3. Huấn luyện mô hình: Sử dụng các mô hình CART và ID3 để huấn luyện trên tập train và dự đoán trên tập test.
+		4. Đánh giá mô hình: Sử dụng accuracy_score và confusion_matrix để đánh giá kết quả.
+	Yêu cầu
+		Python 3.x
+		Thư viện: skimage, numpy, scikit-learn
+	Hướng dẫn sử dụng
+		Đặt thư mục chứa ảnh cần phân loại vào đường dẫn được chỉ định.
+		Chạy chương trình để trích xuất đặc trưng và đánh giá mô hình.
