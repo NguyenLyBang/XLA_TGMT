@@ -25,7 +25,6 @@ Bài 2: Dò Biên Ảnh
 	Hướng dẫn sử dụng
 		Chạy chương trình và chọn ảnh.
 		Kết quả hiển thị các biên của ảnh bằng phương pháp Sobel và Laplacian.
-  
 
 Bài 3: Phân Loại Hình Ảnh Chó Mèo
 
@@ -49,7 +48,6 @@ Bài 5: Trích Xuất Đặc Trưng HOG và Phân Loại Ảnh
 
 	Mô tả
 		Chương trình thực hiện trích xuất đặc trưng HOG (Histogram of Oriented Gradients) để phân loại ảnh trong một tập dữ liệu. Sau đó, sử dụng hai mô hình cây quyết định:
-		
 		1. CART (Gini Index): Sử dụng gini để chia nhánh.
 		2. ID3 (Information Gain): Sử dụng entropy để chia nhánh.
 	Quy trình
@@ -63,3 +61,19 @@ Bài 5: Trích Xuất Đặc Trưng HOG và Phân Loại Ảnh
 	Hướng dẫn sử dụng
 		Đặt thư mục chứa ảnh cần phân loại vào đường dẫn được chỉ định.
 		Chạy chương trình để trích xuất đặc trưng và đánh giá mô hình.
+
+Bài 6: Phân Cụm Ảnh Vệ Tinh Bằng KMeans và Fuzzy C-Means (FCM)
+
+	Mô tả
+		Phân cụm ảnh vệ tinh để nhận diện các khu vực có nhà ở:
+		1. KMeans Clustering: Sử dụng thuật toán KMeans để phân cụm ảnh thành hai khu vực (nhà và nền).
+		2. Fuzzy C-Means (FCM): Sử dụng thuật toán FCM để phân cụm ảnh thành hai khu vực với cách tiếp cận mềm dẻo hơn (fuzzy).
+	Quy trình
+		1. Tiền xử lý ảnh: Đọc ảnh vệ tinh, chuyển đổi sang RGB, thay đổi kích thước và chuyển thành dạng mảng 2D.
+		2. Phân cụm:
+			a) KMeans: Phân cụm và xác định cụm nào là nhà dựa trên giá trị trung bình màu.
+			b) FCM: Tương tự như KMeans, nhưng áp dụng phương pháp phân cụm mờ.
+		3. Hiển thị kết quả: So sánh kết quả phân cụm của KMeans và FCM.
+	Yêu cầu
+		Python 3.x
+		Thư viện: opencv-python, numpy, matplotlib, skfuzzy, scikit-learn
