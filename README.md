@@ -44,6 +44,23 @@ Bài 3: Phân Loại Hình Ảnh Chó Mèo
 		Chạy chương trình.
 		Chương trình sẽ tải dữ liệu, huấn luyện và đánh giá từng mô hình, sau đó in ra kết quả.
 
+Bài 4: Trích Xuất Đặc Trưng HOG và Phân Loại Ảnh
+
+	Mô tả
+		Sử dụng đặc trưng HOG (Histogram of Oriented Gradients) để phân loại ảnh dựa trên ba mô hình:
+		1. SVM (Support Vector Machine)
+		2. KNN (K-Nearest Neighbors)
+		3. Decision Tree (Cây quyết định)
+	Chương trình bao gồm các bước:
+		1. Trích xuất đặc trưng HOG từ ảnh.
+		2. Tải dữ liệu huấn luyện từ file văn bản.
+		3. Chia dữ liệu thành tập huấn luyện và kiểm tra.
+		4. Huấn luyện và đánh giá mô hình trên các chỉ số như độ chính xác, precision, và recall.
+		5. Dự đoán nhãn cho ảnh đầu vào mới dựa trên đặc trưng HOG.
+	Yêu cầu
+		Python 3.x
+		Thư viện: opencv-python, numpy, scikit-learn
+
 Bài 5: Trích Xuất Đặc Trưng HOG và Phân Loại Ảnh
 
 	Mô tả
